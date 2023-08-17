@@ -6,6 +6,8 @@
     display: flex;
 }
 
+@media (min-width:768px){
+
 body {
     background-color: #EA0901;
     height: 100em;
@@ -74,3 +76,79 @@ input:active{
     background-color: #000000;    
     color: white;
 }
+
+}
+
+
+@media (max-width:767px){
+
+    body {
+        background-color: #EA0901;
+        height: 100em;
+    }
+    
+    #titulo {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    
+    #diametro {
+        margin-bottom: 10px;
+    }
+    
+    #curso {
+        margin-bottom: 10px;
+    }
+    
+    #cilindros {
+        margin-bottom: 10px;
+    }
+    
+    #cabecote {
+        margin-bottom: 10px;
+    }
+    
+    #compressao-desejada {
+        margin-bottom: 10px;
+    }
+    
+    #compressao-atual {
+        margin-bottom: 10px;
+    }
+    
+    .paragrafo {
+        font-weight: 300;
+    }
+    
+    input {
+        background-color: #000000;
+        color: white;
+        width: 75%;
+    }
+    
+    h1 {
+        color: white;
+        font-weight: 500;
+    }
+    
+    p {
+        color: white;
+    }
+    
+    #btn {
+        width: 80px;
+        margin-top: 80px;
+        margin-left: 14px;
+        margin-bottom: 80px;
+    }
+    
+    .resultado{
+        font-weight: 500;
+    }
+    
+    input:active{
+        background-color: #000000;    
+        color: white;
+    }
+    
+    }
