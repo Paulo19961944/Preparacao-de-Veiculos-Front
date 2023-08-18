@@ -22,11 +22,13 @@ function calcular() {
     const pi = 3.14159
     const volPistao = raioPistao ** 2 * curso * pi / 1000;
     const cilindrada = Number(volPistao * nCilindros).toFixed(2);
-    const volCameraDesejada = volPistao / (compressaoDesejada - 1);
-    const volCameraAtual = volPistao / (compressaoAtual - 1);
+    const volumeMorto1 = volPistao / (compressaoDesejada - 1);
+    const volumeMorto2 = volPistao / (compressaoAtual - 1);
+    const volCameraDesejada = volumeMorto1 - cabecoteCorrigido;
+    const volCameraAtual = volumeMorto2 - cabecoteCorrigido;
     const cabecoteCorrigido = cabecote / 10;
-    const cameraAtual = Math.cbrt(volCameraAtual - cabecoteCorrigido);
-    const cameraDesejada = Math.cbrt(volCameraDesejada - cabecoteCorrigido);
+    const cameraAtual = Math.cbrt(volCameraAtual);
+    const cameraDesejada = Math.cbrt(volCameraDesejada);
     const passeCabecote = Number((cameraAtual - cameraDesejada) * 10 ).toFixed(3);
 
     /** Teste */
