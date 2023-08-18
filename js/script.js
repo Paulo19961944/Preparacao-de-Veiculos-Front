@@ -24,9 +24,16 @@ function calcular() {
     const cilindrada = Number(volPistao * nCilindros).toFixed(2);
     const volCameraDesejada = volPistao / (compressaoDesejada - 1);
     const volCameraAtual = volPistao / (compressaoAtual - 1);
-    const cameraAtual = Math.cbrt(volCameraAtual);
-    const cameraDesejada = Math.cbrt(volCameraDesejada);
-    const passeCabecote = Number((cameraAtual - cameraDesejada) * 10 - cabecote).toFixed(3);
+    const cabecoteCorrigido = cabecote / 10;
+    const cameraAtual = Math.cbrt(volCameraAtual - cabecoteCorrigido);
+    const cameraDesejada = Math.cbrt(volCameraDesejada - cabecoteCorrigido);
+    const passeCabecote = Number((cameraAtual - cameraDesejada) * 10 ).toFixed(3);
+
+    /** Teste */
+    console.log("A Cilindrada e: " + cilindrada);
+    console.log("A Taxa de Compressão Atual é: " + compressaoAtual);
+    console.log("A Taxa de Compressão Desejada é: " + compressaoDesejada);
+    console.log("Rebaixe o cabeçote em: " + passeCabecote + " mm");
 
     /** Escreve no HTML */
     resultadoCilindrada.innerHTML = "A Cilindrada é: " + cilindrada + " cm3";
