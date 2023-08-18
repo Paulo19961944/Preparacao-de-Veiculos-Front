@@ -31,12 +31,6 @@ function calcular() {
     const cameraDesejada = Math.cbrt(volCameraDesejada);
     const passeCabecote = Number((cameraAtual - cameraDesejada) * 10 ).toFixed(3);
 
-    /** Teste */
-    console.log("A Cilindrada e: " + cilindrada);
-    console.log("A Taxa de Compressão Atual é: " + compressaoAtual);
-    console.log("A Taxa de Compressão Desejada é: " + compressaoDesejada);
-    console.log("Rebaixe o cabeçote em: " + passeCabecote + " mm");
-
     /** Escreve no HTML */
     resultadoCilindrada.innerHTML = "A Cilindrada é: " + cilindrada + " cm3";
     resultadoCompressaoAtual.innerHTML = "A Compressão Atual é: " + compressaoAtual;
