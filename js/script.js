@@ -19,12 +19,11 @@ function calcular() {
 
     /** Faz o Calculo */
     const raioPistao = diametro / 2;
-    const pi = 3.14;
+    const pi = 3.141592;
     const area = (raioPistao / 10)** 2 * pi
     const volPistao = raioPistao ** 2 * curso * pi / 1000;
     const cilindrada = Number(volPistao * nCilindros).toFixed(2);
-    const cabecoteCorrigido = cabecote / 10;
-    const volJunta = area * cabecoteCorrigido
+    const volJunta = area * cabecote / 10;
     const volumeMorto1 = volPistao / (compressaoDesejada - 1);
     const volumeMorto2 = volPistao / (compressaoAtual - 1);
     const volCameraDesejada = volumeMorto1 - volJunta;
