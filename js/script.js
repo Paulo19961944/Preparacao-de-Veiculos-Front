@@ -19,14 +19,16 @@ function calcular() {
 
     /** Faz o Calculo */
     const raioPistao = diametro / 2;
-    const pi = 3.14159;
+    const pi = 3.14;
+    const area = (raioPistao / 10)** 2 * pi
     const volPistao = raioPistao ** 2 * curso * pi / 1000;
     const cilindrada = Number(volPistao * nCilindros).toFixed(2);
     const cabecoteCorrigido = cabecote / 10;
+    const volJunta = area * cabecoteCorrigido
     const volumeMorto1 = volPistao / (compressaoDesejada - 1);
     const volumeMorto2 = volPistao / (compressaoAtual - 1);
-    const volCameraDesejada = volumeMorto1 - cabecoteCorrigido;
-    const volCameraAtual = volumeMorto2 - cabecoteCorrigido;
+    const volCameraDesejada = volumeMorto1 - volJunta;
+    const volCameraAtual = volumeMorto2 - volJunta;
     const cameraAtual = Math.cbrt(volCameraAtual);
     const cameraDesejada = Math.cbrt(volCameraDesejada);
     const passeCabecote = Number((cameraAtual - cameraDesejada) * 10 ).toFixed(3);
