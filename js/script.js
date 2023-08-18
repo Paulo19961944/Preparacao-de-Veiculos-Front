@@ -19,7 +19,7 @@ function calcular() {
 
     /** Faz o Calculo */
     const raioPistao = diametro / 2;
-    const pi = 31.4159
+    const pi = 3.14159;
     const volPistao = raioPistao ** 2 * curso * pi / 1000;
     const cilindrada = Number(volPistao * nCilindros).toFixed(2);
     const cabecoteCorrigido = cabecote / 10;
