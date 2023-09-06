@@ -13,7 +13,7 @@
 @media (min-width:768px) {
 
     body {
-        background-color: #FE0901;
+        background-color: #C0140E;
         height: 100em;
     }
 
@@ -47,20 +47,20 @@
     }
 
     .paragrafo {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
     }
 
     input {
         background-color: #000000;
         color: white;
-        font-weight: 600;
+        font-weight: 500;
         width: 75%;
     }
 
     h1 {
         color: white;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     p {
@@ -75,7 +75,7 @@
     }
 
     .resultado {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     input:active {
@@ -87,7 +87,7 @@
 @media (max-width:767px) {
 
     body {
-        background-color: #EA0901;
+        background-color: #C0140E;
         height: 100em;
     }
 
@@ -121,7 +121,7 @@
     }
 
     .paragrafo {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     input {
@@ -132,7 +132,7 @@
 
     h1 {
         color: white;
-        font-weight: 600;
+        font-weight: 500;
     }
 
     p {
@@ -148,7 +148,7 @@
     }
 
     .resultado {
-        font-weight: 600;
+        font-weight: 500;
     }
 
     input:active {
