@@ -1,5 +1,5 @@
 * {
-    width: 100%;
+    max-width: 100%;
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     flex-direction: column;
@@ -7,13 +7,10 @@
     font-family: 'Kanit', sans-serif;
 }
 
-
-
-
 @media (min-width:768px) {
 
     body {
-        background-color: #C91913;
+        background: linear-gradient(to left, #C91913, #000000);
         height: 100em;
     }
 
@@ -87,7 +84,7 @@
 @media (max-width:767px) {
 
     body {
-        background-color: #C91913;
+        background: linear-gradient(to right, #C91913, #000000);
         height: 100em;
     }
 
