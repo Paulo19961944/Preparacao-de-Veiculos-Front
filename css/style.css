@@ -84,7 +84,7 @@
 @media (max-width:767px) {
 
     body {
-        background: linear-gradient(to right, #C91913, #000000);
+        background: linear-gradient(to left, #C91913, #000000);
         height: 100em;
     }
 
