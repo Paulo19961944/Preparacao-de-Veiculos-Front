@@ -1,3 +1,14 @@
+/**
+ * Projeto: [Preparação de Veículos Front]
+ * Versão: 2.0.3
+ * Desenvolvedor: [Paulo Henrique Azevedo do Nascimento]
+ 
+ * 
+ * Descrição: 
+ * Este arquivo CSS é parte do projeto [Preparação de Veículos Front], uma aplicação web desenvolvida para [Fazer cálculos relacionado a Preparação de Motores].
+ * Ele contém estilos para garantir uma experiência de usuário agradável e consistente em diferentes dispositivos.
+ */
+
 * {
     padding: 0;
     margin: 0;
@@ -249,3 +260,29 @@ body {
         width: 90%;
     }   
 }
+
+/**
+ * Instruções de Uso:
+ * 1. Abra o link https://paulo19961944.github.io/Preparacao-de-Veiculos-Front/.
+ * 2. Preencha os campos necessários.
+ * 3. Clique no botão para [Calcular o quanto deve rebaixar o Cabeçote de seu Motor].
+ */
+
+/**
+ * Acessibilidade:
+ * As cores e contrastes foram escolhidos considerando a acessibilidade.
+ */
+
+/**
+ * Testes:
+ * O projeto foi testado nos seguintes navegadores:
+ * - Google Chrome
+ * - Mozilla Firefox
+ * - Microsoft Edge
+ * - Safari
+ */
+
+/**
+ * Contribuições:
+ * Contribuições são bem-vindas! Sinta-se à vontade para enviar pull requests ou relatar problemas.
+ */
