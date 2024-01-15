@@ -56,8 +56,9 @@ body {
 
     h1 {
         color: black;
-        font-family: "Playfair Display", serif;
-        font-weight: 400;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        text-shadow: #ccc 1.5px 1.5px;
     }
 
     p {
@@ -169,8 +170,9 @@ body {
 
     h1 {
         color: black;
-        font-weight: 400;
-        font-family: "Playfair Display", serif;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        text-shadow: #ccc 1.5px 1.5px;
     }
 
     p {
