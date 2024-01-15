@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
@@ -24,7 +25,7 @@
                 <p class="paragrafo">Digite o Diametro do Pistão:</p>
             </div>
             <div class="col-md6">
-                <input type="text" name="diametro" id="diametro">
+                <input type="text" name="diametro" id="diametro" required>
             </div>
         </div>
     </div>
@@ -34,7 +35,7 @@
                 <p class="paragrafo">Digite o Curso do Pistão (mm):</p>
             </div>
             <div class="col-md6">
-                <input type="text" name="curso" id="curso">
+                <input type="text" name="curso" id="curso" required>
             </div>
         </div>
     </div>
@@ -44,7 +45,7 @@
                 <p class="paragrafo">Digite Quantos Cilindros tem o seu Veículo:</p>
             </div>
             <div class="col-md6">
-                <input type="text" name="cilindros" id="cilindros">
+                <input type="text" name="cilindros" id="cilindros" required>
             </div>
         </div>
     </div>
@@ -54,7 +55,7 @@
                 <p class="paragrafo">Digite a Espessura da Junta de Cabeçote (mm):</p>
             </div>
             <div class="col-md6">
-                <input type="text" name="cabecote" id="cabecote">
+                <input type="text" name="cabecote" id="cabecote" required>
             </div>
         </div>
     </div>
@@ -64,7 +65,7 @@
                 <p class="paragrafo">Digite a Taxa de Compressão Desejada:</p>
             </div>
             <div class="col-md6">
-                <input type="text" name="compressao" id="compressao-desejada">
+                <input type="text" name="compressao" id="compressao-desejada" required>
             </div>
         </div>
     </div>
@@ -74,16 +75,30 @@
                 <p class="paragrafo">Digite a Taxa de Compressão Atual:</p>
             </div>
             <div class="col-md6">
-                <input type="text" name="compressao" id="compressao-atual">
+                <input type="text" name="compressao" id="compressao-atual" required>
             </div>
         </div>
+        <button type="submit" id="btn">Calcular</button>
     </div>
-    <button type="submit" class="btn btn-primary" id="btn">Calcular</button>
-    <p id="resultado-cilindrada" class="resultado"></p>
-    <p id="resultado-compressao-atual" class="resultado"></p>
-    <p id="resultado-compressao-desejada" class="resultado"></p>
-    <p id="resultado-cabeçote" class="resultado"></p>
+    <footer>
+        <h1 id="titulo-resultado" class="resultado">Resultado</h1>
+        <p id="resultado-cilindrada" class="resultado"></p>
+        <p id="resultado-compressao-atual" class="resultado"></p>
+        <p id="resultado-compressao-desejada" class="resultado"></p>
+        <p id="resultado-cabeçote" class="resultado"></p>
+        <div class="windows">
+            <div class="windows-logo">
+            </div>
+            <div class="windows-logo">
+            </div>
+        </div>
+        <div class="windows-2">
+            <div class="windows-logo">
+            </div>
+            <div class="windows-logo">
+            </div>
+        </div>
+    </footer>
     <script src="js/script.js"></script>
 </body>
-
 </html>
